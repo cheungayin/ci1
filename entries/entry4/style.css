@@ -1,0 +1,179 @@
+@font-face{
+    font-family:"felten-reg";
+    src:url("fonts/FeltenTest-Regular.otf") format("opentype");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:"felten-shaded-outline-shadow";
+    src:url("fonts/FeltenShadedTest-OutlineShadow.otf") format("opentype");
+    font-weight:bold;
+    font-style:normal;
+}
+
+body{
+    position:relative;
+    font-family:"felten-reg";
+    font-size:1rem;
+    line-height:1.25;
+    word-break:keep-all;
+    color:#1b0fd7;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' style='fill:black;font-size:30px;'><text y='50%'>👆</text></svg>") 16 0, auto;
+    height:100%;
+}
+
+h1{
+    font-family:"felten-reg";
+    font-size:5rem;
+    text-align:center;
+    color:#ee4411;
+    margin-bottom: -0.05em;
+}
+
+.page-description{
+    font-family:'Ubuntu Mono', monospace;
+    font-size:1rem;
+    text-align:center;
+    color:#ee4411;
+}
+
+hr{
+    width:90%;
+    text-align:center;
+    margin-top:2.5em;
+    margin-bottom:2em;
+    height:0.5em;
+    border:none;
+    background:#ee4411;
+}
+
+.box{
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+    width:80%;
+    margin:3em;
+    padding-bottom:4em;
+}
+
+.book-title{
+    font-size:4rem;
+    width:100%;
+}
+
+.author{
+    font-family:'Ubuntu Mono', monospace;
+    font-style:italic;
+    font-weight:700;
+    font-size:1rem;
+    position:relative;
+}
+
+.book-info{
+    font-family:'Ubuntu Mono', monospace;
+    font-size:1rem;
+    position:relative;
+    margin-bottom: -0.05em;
+}
+
+/* unvisited link  */
+a:link{
+    text-decoration:none;
+    color:inherit;
+}
+  
+/* visited link */
+a:visited{
+    color:#134e13;
+}
+  
+/* mouse over link */
+a:hover{
+    color:#1b0fd7;
+    font-family:"felten-shaded-outline-shadow";
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='90' height='108' style='fill:black;font-size:54px;'><text y='50%'>👆</text></svg>") 16 0, auto;
+}
+  
+/* selected link */
+a:active{
+    color:#ee4411;
+}
+
+::-moz-selection{
+    background:#ffd966;
+  }
+  
+::selection{
+    background:#ffd966;
+}
+
+.blurb-box{
+    font-family:'Ubuntu Mono', monospace;
+    font-weight:400;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    text-align:left;
+    width:90%;
+    height:100%;
+    margin:2em;
+}
+
+.blurb-box:first-child,
+.blurb-box:target{
+    display:flex;
+}
+
+.blurb-img{
+    flex:1;
+    padding:1em;
+    width: 100%;
+}
+
+img{
+    width: 100%;  
+}
+
+.blurb-book-title{
+    font-weight:700;
+    flex:1;
+    padding:1em;
+}
+
+.blurb-author{
+    font-style:italic;
+}
+
+.blurb-text{
+    flex:2;
+    padding:1em;
+}
+
+.dropdown {
+    font-family:'Ubuntu Mono', monospace;
+    font-size:1rem;
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    font-family:'Ubuntu Mono', monospace;
+    font-size:1rem;
+    display:none;
+    position:absolute;
+    left:100%;
+    border:2px solid #cbd70f;
+    background-color:#ffffff;
+    color:#ee4411;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:-1em;
+    padding-bottom:-1em;
+    z-index:1;
+    width:100%;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
