@@ -184,6 +184,12 @@ a:visited{
         order:1;
         flex-direction:column;
     }
+    h1{
+        font-size:3rem;
+    }
+    p{
+        font-size:1.25rem;
+    }
     .popupwindow{
         top:5em;
         right:5em;
