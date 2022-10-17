@@ -10,9 +10,9 @@
 body{
     position:relative;
     font-family: bilo, sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size:1.5rem;
-    font-weight:600;
-    font-style:normal;
     text-align:left;
     line-height:1.25;
     word-break:keep-all;
