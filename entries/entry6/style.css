@@ -9,9 +9,9 @@
 
 body{
     position:relative;
-    font-family: bilo, sans-serif;
-    font-weight: 600;
-    font-style: normal;
+    font-family:bilo, sans-serif;
+    font-weight:600;
+    font-style:normal;
     font-size:1.5rem;
     text-align:left;
     line-height:1.25;
@@ -180,7 +180,7 @@ a:visited{
     text-decoration:none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px){
     .container{
         flex:1;
         order:1;

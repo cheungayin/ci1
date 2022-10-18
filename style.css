@@ -76,7 +76,7 @@ p{
 }
 
 .container>div:nth-child(7){
-    background-color:#ffffff;
+    background-color:#000000;
 }
 
 .container>div:nth-child(8){
@@ -94,6 +94,10 @@ p{
 .container>div:nth-child(11){
     background-color:#ffffff;
 }
+
+/* .peak:hover{
+    color:#000000;
+} */
 
 ::-moz-selection{
     background:#dcf0cf;
@@ -132,9 +136,9 @@ a:visited{
 
 @media (min-width: 1000px){
     .container{
-    display:grid;
-    grid-template-columns:33% 33% 34%;
-    margin:1em;
-    gap:1em;
-}
+        display:grid;
+        grid-template-columns:33% 33% 34%;
+        margin:1em;
+        gap:1em;
+    }
 }

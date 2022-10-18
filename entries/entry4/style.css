@@ -128,11 +128,11 @@ a:active{
 .blurb-img{
     flex:1;
     padding:1em;
-    width: 100%;
+    width:100%;
 }
 
 img{
-    width: 100%;  
+    width:100%;  
 }
 
 .blurb-book-title{
@@ -153,8 +153,8 @@ img{
 .dropdown{
     font-family:'Ubuntu Mono', monospace;
     font-size:1rem;
-    position: relative;
-    display: inline-block;
+    position:relative;
+    display:inline-block;
 }
   
 .dropdown-content{
