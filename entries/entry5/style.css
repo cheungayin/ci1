@@ -117,11 +117,11 @@ hr{
     object-fit:cover;
 }
 
-.recipe{
+.wrapper{
     display:flex;
-    flex:2;
-    flex-direction:row;
-    order:1;
+    /* flex:2; */
+    flex-flow:row wrap;
+    /* order:1; */
     width:100%;
     margin-top:2em;
     margin-bottom:2em;
@@ -131,9 +131,26 @@ hr{
 }
 
 .recipe-img{
-    flex:1;
-    width:100%;
+    /* flex:1; */
+    display:flex;
+    order:1;
+    height:max-content;
+    justify-content: center;
+    align-items: center;
+    /* width:100%; */
 }
+
+/* .fixed{
+    display: flex;
+    order: 2;
+    height: 100px;
+    border: 10px solid limegreen;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 2em;
+    color: blue;
+} */
 
 img{
     width:95%;
@@ -142,10 +159,23 @@ img{
 }
 
 .recipe-matcha{
-    flex:1;
-    width:100%;
+    /* flex:1;
+    width:100%; */
+    display:flex;
+    order:2;
+    text-align:left;
     color:#186318;
 }
+
+/* .main{
+    display: flex;
+    order: 3;
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1em;
+} */
 
 .recipe-bananabread{
     flex:1;
@@ -186,7 +216,7 @@ a:visited{
     color:#fc59dd;
 }
 
-@media screen and (max-width: 800px){
+@media all and (max-width: 800px){
     .recipe{
         flex:2;
         order:1;
