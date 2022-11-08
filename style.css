@@ -80,19 +80,20 @@ p{
 }
 
 .container>div:nth-child(8){
-    background-color:#000000;
+    background-color:#ffffff;
+    color:#000000;
 }
 
 .container>div:nth-child(9){
-    background-color:#ffffff;
+    background-color:#000000;
 }
 
 .container>div:nth-child(10){
-    background-color:#ffffff;
+    background-color:#000000;
 }
 
 .container>div:nth-child(11){
-    background-color:#ffffff;
+    background-color:#000000;
 }
 
 /* .peak:hover{
