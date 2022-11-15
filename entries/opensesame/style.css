@@ -1,0 +1,84 @@
+@font-face{
+    font-family:"TGRiotaGothic";
+    src:url("fonts/TGRiotaGothicTrials-Black.otf") format("opentype");
+    font-weight:bolder;
+    font-style:normal;
+}
+
+body{
+    width:100%;
+    margin:0;
+    background:#c9ecff;
+    text-align:center;
+    font-size:5vw;
+    font-family:'Poppins', sans-serif;
+}
+
+header{ 
+    width:100%;
+}
+
+h1{
+    font-family:'TGRiotaGothic';
+    margin-bottom:0;
+}
+
+p{
+  margin-top:0;
+}
+
+#house{
+  width:100%;
+  margin-top:5%;
+}
+
+#door{
+ position:absolute;
+ left:20%;
+ transition: .2s all;
+}
+
+#key{
+  position:absolute;
+  z-index:1000;
+  left:5%;
+}
+
+.lookatme{
+  animation-name:lookatme;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+}
+
+.dooropening{
+  animation-name:dooropening;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes lookatme{
+    0%{
+        transform:translate(0,0)
+    }
+    50%{
+        transform:translate(0,0)
+    }
+    60%{
+        transform:translate(0,-10%)
+    }
+    68%{
+        transform:translate(0,-5%)
+    }
+    74%{
+        transform:translate(0,-12%)
+    }
+}
+
+@keyframes dooropening{
+    0%{
+        transform:translate(0,0)
+    }
+    50%{
+        transform:translate(0,-5%)
+    }
+}
