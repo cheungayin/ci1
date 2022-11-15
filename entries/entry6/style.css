@@ -107,6 +107,8 @@ a:visited{
     color:inherit;
 }
 
+/* original code: 3D Text (scss) - animated by Sarah Fossheim https://codepen.io/fossheim/pen/ExjdLRp */
+
 .bounce span{
     position:relative;
     letter-spacing:-0.15em;
