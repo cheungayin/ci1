@@ -125,13 +125,10 @@ a:active{
     .concert{
         flex-shrink:1;
     }
-    /* h1{
-        font-size:10vw;
-    }
     h2{
         font-size:7vw;
     }
     h3{
         font-size:7vw;
-    } */
+    }
 }
