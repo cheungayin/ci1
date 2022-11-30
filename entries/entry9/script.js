@@ -1,3 +1,5 @@
+// original code: JavaScript mouse trail by Ryan Boone https://codepen.io/falldowngoboone/pen/PwzPYv
+
 console.log("hello, world!");
 
 var dots = [],
