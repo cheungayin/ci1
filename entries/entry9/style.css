@@ -10,6 +10,14 @@ body{
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='70' height='84' style='fill:black;font-size:42px;'><text y='50%'>🎸</text></svg>") 16 0, auto;
 }
 
+.trail{
+    position:absolute;
+    height:10em; width:10em;
+    border-radius:50%;
+    background:#ffc1ea;
+    z-index:-1;
+}
+
 h1{
     font-weight:900;
     font-size:10vw;
@@ -22,7 +30,7 @@ h1{
 
 h2{
     font-weight:700;
-    font-size:15rem;
+    font-size:5vw;
     margin:0;
     padding:0.25em;
     text-align:center;
@@ -31,7 +39,7 @@ h2{
 
 h3{
     font-weight:500;
-    font-size:13rem;
+    font-size:3vw;
     margin:0;
     padding:0.25em;
     text-align:center;
@@ -124,11 +132,5 @@ a:active{
     }
     .concert{
         flex-shrink:1;
-    }
-    h2{
-        font-size:7vw;
-    }
-    h3{
-        font-size:7vw;
     }
 }
