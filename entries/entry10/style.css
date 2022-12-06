@@ -10,75 +10,173 @@ body{
     margin:0;
     background:#c9ecff;
     text-align:center;
-    font-size:5vw;
+    font-size:1.5vw;
     font-family:'Poppins', sans-serif;
+    align-items:center;
+    color:#005c8e;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='70' height='84' style='fill:black;font-size:42px;'><text y='50%'>🤑</text></svg>") 16 0, auto;
+
 }
 
 header{ 
     width:100%;
 }
 
+img{
+    width:100%;
+    height:auto;
+    padding:0;
+    margin-top:3em;
+    z-index:999;
+}
+
 h1{
     font-family:'TGRiotaGothic';
     margin-bottom:0;
+    font-size:6vw;
 }
 
 p{
-  margin-top:0;
+    margin-top:0;
+    font-size:2.5vw;
+    z-index:1;
+}
+
+a:link{
+    text-decoration:none;
+    color:inherit;
+}
+
+a:visited{
+    color:#18aeff;
+}
+
+a:hover{
+    color:#3a00e7;
+    text-decoration:underline;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='120' style='fill:black;font-size:60px;'><text y='50%'>👉</text></svg>") 16 0, auto;
+}
+
+a:active{
+    color:#3a00e7;
+}
+
+::-moz-selection{
+    background:#002940;
+    color:#c9ecff;
+  }
+  
+::selection{
+    background:#002940;
+    color:#c9ecff;
 }
 
 #house{
-  width:100%;
-  margin-top:5%;
+    width:100%;
+    margin-top:5%;
+    position:absolute;
 }
 
 #door{
- position:absolute;
- left:20%;
- transition: .2s all;
+    position:absolute;
+    left:20%;
+    transition: .2s all;
 }
 
 #key{
-  position:absolute;
-  z-index:1000;
-  left:5%;
+    position:absolute;
+    z-index:1000;
+    left:5%;
 }
 
 .lookatme{
-  animation-name:lookatme;
-  animation-duration:3s;
-  animation-iteration-count:infinite;
+    animation-name:lookatme;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
 }
 
-.dooropening{
-  animation-name:dooropening;
-  animation-duration:1s;
-  animation-iteration-count:infinite;
+.stealing{
+    animation-name:stealing;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
 }
 
-@keyframes lookatme{
+#kitchen{
+    width:100%;
+    margin-top:5%;
+    position:absolute;
+}
+
+#pan{
+    position:absolute;
+    left:20%;
+    transition: .2s all;
+}
+
+#egg{
+    position:absolute;
+    z-index:1000;
+    left:5%;
+}
+
+.cooked{
+    animation-name:cooked;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes stealing{
     0%{
         transform:translate(0,0)
     }
     50%{
-        transform:translate(0,0)
-    }
-    60%{
-        transform:translate(0,-10%)
-    }
-    68%{
         transform:translate(0,-5%)
-    }
-    74%{
-        transform:translate(0,-12%)
     }
 }
 
-@keyframes dooropening{
+@keyframes cooked{
     0%{
         transform:translate(0,0)
     }
     50%{
-        transform:translate(0,-5%)
+        transform:translate(0,5%)
     }
 }
+
+@media (max-width:800px){
+    body{
+        background:#fff0fa;
+        color:#a8006d;    
+    }
+    a:visited{
+        color:#18aeff;
+    }
+    a:hover{
+        color:#3a00e7;
+    }
+    a:active{
+        color:#3a00e7;
+    }
+    ::-moz-selection{
+        background:#75004b;
+        color:#fff0fa;
+    }
+    ::selection{
+        background:#75004b;
+        color:#fff0fa;
+    }
+}
+
+/* .form{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    margin:0;
+    z-index:1;
+}
+
+.button{
+    margin-top:0;
+    justify-content:flex-end;
+    align-items:baseline;
+} */
